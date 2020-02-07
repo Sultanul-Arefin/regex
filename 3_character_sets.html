@@ -1,0 +1,29 @@
+
+// character sets to match different characters in single position
+
+//regular expression
+# [ng]inja 		//either n or g in first position
+-> ninja ninja ninja ginja will be found
+
+
+//test string
+ninja ninja ninja ginja nginja
+
+// logic character set
+
+//regex
+# [abc123] 		// abe will be found 
+
+//test string
+ab3e
+
+// logic char set
+
+//regex
+# [abc123]000 	// all will be found except e000 because starts with abc123 & end with 000
+
+# [^p]000 		// don't want to match where p exist in first position
+# [^pe2]000 	// don't want to match where p,e,2 exist in first position
+
+// test string
+a000 b000 c000 3000 e000
