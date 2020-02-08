@@ -1,0 +1,18 @@
+either p|t
+
+//regex
+/p|t/g 	//it'll match either p or t
+
+//regex
+/(p|t)yre/g 	//it'll match either pyre or tyre
+
+// regex
+/(pet|toy|crazy) rabbit
+
+// string
+pet rabbit 	//it'll match
+toy rabbit	//it'll match
+crazy rabbit	//it'll match
+hello rabbit	//it'll not match
+
+// if you use /(pet|toy|crazy)? rabbit it'll match rabbit(without hello) too
