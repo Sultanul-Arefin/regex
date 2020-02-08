@@ -1,0 +1,27 @@
+- \d mathc any digit character(same as [0-9])
+- \w match any word character (z-z, A-Z, 0-9 and _'s)
+- \s match a whitespace character(spaces, tabs etc)
+- \t match a tab character only
+
+- d -- matches a literal character d
+- \d -- matches any digit character
+// all character above are same
+
+// regex
+/\d/g
+
+// test string
+123
+// w, t, s same as above
+
+// regex
+/\d\s\w/g
+
+// test string
+1 n 	//mathces bcause 1st digit, second space, third any character
+
+// regex
+/\d{3}\s\w{5}/g		//3 digit, 1 space, 5 words
+
+// test string
+123 fahim
