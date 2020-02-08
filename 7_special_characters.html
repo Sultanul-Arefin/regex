@@ -1,0 +1,40 @@
+# '+'	the one or more quantifier
+# '\'	the escape character
+# '[]'	the character set
+# '[^]'	the negate symbol in a character set
+# '?'	the zero or one quantifier(makes a preceding char optional)
+# '.'	any character whatsoever(except the newline character)
+# '*'	the 0 or more quantifier(a bit like +)
+
+// regex
+# /hello?/g		// o 0 or multiple time
+
+// string
+hello
+
+//regex /a[a-z]?/g
+
+//string a 		//it'll be matched because ? is optional
+
+# .
+//regex
+/car./g
+
+//string
+car 			// not matched, because there must have a 4th character
+
+//regex
+/.+/g 				// at least one, with any line long
+
+# *
+// regex
+a[a-z]*
+
+//string
+aadlasldl 			// 1st a compulsory, then optional as long as it can be.
+
+//regex
+/abc\*/g			//escape default behaviour
+
+// string
+abc* 				//it'll be matched
